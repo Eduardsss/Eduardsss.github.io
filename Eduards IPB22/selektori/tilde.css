@@ -1,0 +1,7 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin-bottom: 30px;
+    border: 3px dashed black;
+}

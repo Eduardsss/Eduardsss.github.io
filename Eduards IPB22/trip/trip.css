@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(3, 1, 28);
+}
+
+header {
+  background-color: rgb(42, 187, 254);
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+footer {
+  background-color: rgb(42, 81, 254);
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+}
+
+main {
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+article {
+
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 400px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.whole-text {
+  margin-top: 10vw;
+  margin-left:10vw;
+}
+
+.liepaja {
+  margin-bottom: 10vw;
+}
+
+.indonesia {
+  bottom:61%;
+  right:63%;
+  position:absolute;
+}
+
+.one-destination {
+  margin-top:10vw;
+}
+

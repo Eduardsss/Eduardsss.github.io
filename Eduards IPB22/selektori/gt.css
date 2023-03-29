@@ -1,0 +1,7 @@
+body > button{
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: chartreuse;
+    border: black;
+    border-radius: 7px;
+}
