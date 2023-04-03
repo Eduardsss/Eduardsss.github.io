@@ -35,6 +35,8 @@ nav li a {
 nav li a:hover {
     background-color: #444;
     transform: scale(1.2);
+    color: yellow;
+    text-shadow: 0 0 13px white;
 }
 h1, h2, h3 {
     margin: 2rem 0 1rem;
