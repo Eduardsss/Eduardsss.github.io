@@ -83,3 +83,86 @@ footer {
         display: none;
     }
 }
+.parent {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 600px;
+    height: 500px;
+    background-color: lightblue;
+  }
+  
+  .child {
+    background-color: lightgreen;
+    font-family: sans-serif;
+  }
+  .child-1 {
+    background-image: url(trips.PNG);
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .child-2 {
+    background-image: url(kods.PNG);
+    background-size: cover;
+    grid-column: 3/5;
+    grid-row: 1 / span 4;
+  }
+  .child-3 {
+    background-image: url(jēkabiņš.jpg);
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 3/5;
+  }
+  .child-3:hover{
+    background-image: url(hacker.jpg);
+    background-size: cover;
+  }
+  article {
+    margin-top: 120px;
+  }
+
+  #div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 255, 0);
+    margin-top: 70px;
+    transition: width 0.5s, height 0.5s , transform 0.5s;
+  }
+  .square-1:hover {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 255, 0);
+    margin-top: 70px;
+    transform: scale(2);
+  }
+  
+  
+  .square-2:hover {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 255, 0);
+    margin-top: 70px;
+    transform: rotate(45deg);
+  }
+  
+  .square-3:hover {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 255, 0);
+    margin-top: 70px;
+    transform: translateX(100px) translateY(-50px);
+    
+  }
+  
+  .square-4:hover{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 255, 0);
+    margin-top: 70px;
+    transform: rotate(90deg)
+  }
+  .square-4{
+    transform-origin: bottom right;
+  }
