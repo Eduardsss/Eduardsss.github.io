@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv" data-theme="light" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="trip-quiz.css" />
+    <script src="trip-quiz.js" defer></script>
+    <script src="trip-quiz.js" defer></script>
+  </head>
+  <body id="body">
+    <header>
+      <input type="checkbox" id="toggle-theme" />
+      <label for="toggle-theme">
+        <img src="light.svg" id="sun" />
+        <img src="dark.svg" id="moon" />
+      </label>
+    </header>
+    <main>
+      <h1>Kurš galamērķis atrodas uz 17 508 salām?</h1>
+      <div id="box-grid">
+        <div id="Igaunija">
+          <input type="checkbox" name="check" id="check1" /><label for="check1"
+            >Igaunija</label
+          >
+        </div>
+        <div id="Lielbritānija">
+          <input type="checkbox" name="checkfalse" id="check2" /><label
+            for="check2"
+            >Lielbritānija</label
+          >
+        </div>
+        <div id="Liepāja">
+          <input type="checkbox" name="check" id="check3" /><label for="check3"
+            >Liepāja</label
+          >
+        </div>
+        <div id="Indonēzija">
+          <input type="checkbox" name="check" id="check4" /><label for="check4"
+            >Indonēzija</label
+          >
+          
+
+        </div>
+      </div>
+      <div>
+        <button type="button" onclick="getValue()">Pārbaudīt</button>
+      </div>
+      <div id="atbilde">
+        <p id="1"></p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+html {
+  --header-height: 60px;
+  --box-height: 75px;
+  --box-width: 200px;
+  --box-radius: 15px;
+}
+
+html[data-theme="light"] {
+  --primary-color: #f3bd94;
+  --body-color: #e9e4bc;
+  --box-color: #ffffff;
+  --text-color: black;
+  --sun: block;
+  --moon: none;
+}
+
+html[data-theme="dark"] {
+  --primary-color: #595664;
+  --body-color: #32333a;
+  --box-color: #000000;
+  --text-color: white;
+  --sun: none;
+  --moon: block;
+}
+body {
+  margin: 0;
+  background-color: var(--body-color);
+}
+header {
+  width: 100vw;
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  gap: 0;
+}
+main {
+  margin-top: var(--header-height);
+}
+
+p {
+  color: var(--text-color);
+}
+h1 {
+  color: var(--text-color);
+}
+h2 {
+  color: var(--text-color);
+}
+label {
+  color: var(--text-color);
+}
+#australia {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  width: var(--box-width);
+  border-radius: var(--box-radius);
+  grid-column: 1;
+  grid-row: 1;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+#rome {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  width: var(--box-width);
+  border-radius: var(--box-radius);
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+#indonesia {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  width: var(--box-width);
+  border-radius: var(--box-radius);
+  grid-column: 1;
+  grid-row: 2;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+#liepaja {
+  background-color: var(--box-color);
+  height: var(--box-height);
+  width: var(--box-width);
+  border-radius: var(--box-radius);
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+#box-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  width: 500px;
+  gap: 30px;
+}
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--box-radius);
+  width: 100px;
+  height: 35px;
+  margin-top: 35px;
+}
+#toggle-theme {
+  width: 50px;
+  opacity: 0%;
+}
+#sun {
+  display: var(--sun);
+}
+#moon {
+  display: var(--moon);
+}
