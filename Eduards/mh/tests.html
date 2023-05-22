@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+    <input type="checkbox" id="toggle-theme" />
+    <label for="toggle-theme">
+      <img src="light.svg" id="sun" />
+      <img src="dark.svg" id="moon" />
+    </label>
+  </header>
+  <title>Jautājumi un atbildes</title>
+  <style>
+    .correct {
+      color: green;
+    }
+    
+    .incorrect {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jautājumi un atbildes</h1>
+  
+  <h2>Kurš galamērķis atrodas uz 17 508 salām?</h2>
+  <ul>
+    <li data-answer="incorrect">Igaunija</li>
+    <li data-answer="incorrect">Lielbritānija</li>
+    <li data-answer="incorrect">Liepāja</li>
+    <li data-answer="correct">Indonēzija</li>
+  </ul>
+  
+  <h2>Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?</h2>
+  <ul>
+    <li data-answer="incorrect">Liepāja</li>
+    <li data-answer="correct">Austrālija</li>
+    <li data-answer="incorrect">Lietuva</li>
+    <li data-answer="incorrect">Kanāda</li>
+  </ul>
+  
+  <h2>Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas teritorija, kas iekļauta "Natura 2000"?</h2>
+  <ul>
+    <li data-answer="incorrect">Lībija</li>
+    <li data-answer="incorrect">Ķīna</li>
+    <li data-answer="correct">Liepāja</li>
+    <li data-answer="incorrect">Čīle</li>
+  </ul>
+  
+  <script>
+    var answers = document.querySelectorAll('li');
+    
+    answers.forEach(function(answer) {
+      answer.addEventListener('click', function() {
+        var isCorrect = answer.getAttribute('data-answer');
+        
+        if (isCorrect === 'correct') {
+          answer.classList.add('correct');
+        } else {
+          answer.classList.add('incorrect');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

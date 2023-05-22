@@ -1,0 +1,32 @@
+html{
+    --header-height: 60px;
+}
+
+html[data-theme="light"]{
+    --primary-color:white;
+}
+
+html[data-theme="dark"]{
+    --primary-color:black;
+}
+body{
+    margin: 0;
+    height: 100000px;
+}
+header{
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-color: black;
+    border:2px;
+    border-style:solid;
+}
+main{
+    margin-top: var(--header-height);
+
+}
+
